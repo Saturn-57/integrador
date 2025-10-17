@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Website dos eventos ai ne</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/event_box.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+        <header>
+
+            <div id="config">
+                <a href="login.html"><img src="../img/user.png"></a>
+                <a href="config.html"><img src="../img/config.png"></a>
+            </div>
+
+            <div id="result_eventos">
+            <h2>Os eventos aparecerão aqui!</h2>
+            </div>
+
+        </header>
+
+        <div id="conteudo">
+            <div class="below-config">
+            <form action="../php/exemplo.php" method="post">
+                <input type="text" name="buscar" placeholder="Buscar eventos">
+                <input type="submit" value="Buscar">
+            </form>
+            </div>
+
+            <br class="space"></br>
+
+            <div class="actions">
+                <button type="button">Criar evento</button>
+                <button type="button">Registrar Organizador</button>
+                <button type="button">Registrar Participante</button>
+                <div class="filtros">
+                    <label for="filtro">Filtrar por:</label>
+                    <select id="filtro" name="filtro">
+                        <option value="data">Data</option>
+                        <option value="localizacao">Localização</option>
+                        <option value="tipo">Tipo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="eventos">
+                <!-- o php vai cuspir os eventos aqui eu acho -->
+            </div>
+        </div>
+
+
+</body>
+</html>
