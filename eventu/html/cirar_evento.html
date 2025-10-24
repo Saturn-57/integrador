@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Login em sua conta</title>
+    <link rel="stylesheet" href="../css/style_login.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+        <header>
+
+            <div id="config">
+                <a href="index.html"><img src="../img/return.png"></a>
+            </div>
+
+        </header>
+
+        <div id="conteudo">
+            <div class="actions">
+                <h1>Cadastre-se!</h1>
+                <form action="criar_conta.php" method="post">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="birthday">Data de nascimento:</label><br>
+                    <input type="date" id="birthday" name="birthday" required><br><br>
+
+                    <h3>Sexo:</h3>
+                    <div class="radio_gender">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Masculino</label><br>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="male">Feminino</label><br>
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="male">Outro</label><br>
+                    </div>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="password">Senha:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <b><input type="submit" value="Registrar"></b>
+                
+
+                <p>Já tem uma conta? <a href="login.html">Faça o login!</a></p>
+                
+            </div>
+
+        </div>
+
+
+</body>
+</html>
